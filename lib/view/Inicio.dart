@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:vet_cristo/config/theme/app_theme.dart';
 import 'package:vet_cristo/view/HomeScreen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -15,8 +16,8 @@ class LoginScreen extends StatelessWidget {
           Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/gym_login.jpg'),
-                  fit: BoxFit.cover,
+                  image: AssetImage('assets/login.png'),
+                  fit: BoxFit.fill,
                 ),
               ),
             ),
@@ -28,11 +29,11 @@ class LoginScreen extends StatelessWidget {
               children: [
                 SizedBox(height: 100),
                 const Text(
-                  'Iniciar sesión',
+                  'Bienvenidos',
                   style: TextStyle(
                     fontSize: 30.0,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                 ),
                 const SizedBox(height: 100),
@@ -70,13 +71,13 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 
-                const SizedBox(height: 20.0),
+                const SizedBox(height: 35),
 
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     maximumSize: const Size(500, 100),
                     minimumSize: const Size(300, 70),
-                    backgroundColor: Colors.red,
+                    backgroundColor: AppTheme.secondaryColor,
                     padding: const EdgeInsets.symmetric(vertical: 15.0),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0),

@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:vet_cristo/config/theme/app_theme.dart';
-import 'package:vet_cristo/view/widget/menu_de_navegacion.dart';
+import 'package:vet_cristo/view/Widget/menu_de_navegacion.dart';
 
 class PerfilScreen extends StatefulWidget {
   static const String name = 'PerfilScreen';
@@ -44,7 +44,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/perfil.png'),
+                  image: AssetImage('assets/login.png'),
                 ),
                 boxShadow: [
                   BoxShadow(
@@ -97,28 +97,13 @@ class _PerfilScreenState extends State<PerfilScreen> {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Peso: 70 kg',
+                    'Telefono: 78541287',
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.black,
                     ),
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Altura: 175 cm',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
-                    ),
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'IMC: 22.9',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
-                    ),
-                  ),
+                  
                   SizedBox(height: 8),
                   Text(
                     'Correo electrónico: john.doe@gmail.com',
@@ -133,8 +118,8 @@ class _PerfilScreenState extends State<PerfilScreen> {
                       // Lógica para salir
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.red, // Cambiar color del botón
-                      onPrimary:
+                      backgroundColor: AppTheme.secondaryColor, // Cambiar color del botón
+                      foregroundColor:
                           Colors.white, // Cambiar color del texto del botón
                       padding:
                           EdgeInsets.symmetric(vertical: 16, horizontal: 32),

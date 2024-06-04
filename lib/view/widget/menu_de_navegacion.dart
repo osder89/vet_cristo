@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:vet_cristo/view/CitasScrenn.dart';
+import 'package:vet_cristo/view/MascotasScreen.dart';
 import 'package:vet_cristo/view/HomeScreen.dart';
 import 'package:vet_cristo/view/PerfilScreen.dart';
 
@@ -29,7 +31,7 @@ class _MenuDeNavegacionState extends State<MenuDeNavegacion> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => HomeScreen(),
+            builder: (context) => CitasScreen(),
           ),
         );
         break;
@@ -37,7 +39,7 @@ class _MenuDeNavegacionState extends State<MenuDeNavegacion> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => HomeScreen(),
+            builder: (context) => MascotasScreen(),
           ),
         );
         break;
@@ -83,16 +85,16 @@ class _MenuDeNavegacionState extends State<MenuDeNavegacion> {
           onTap: _onItemTapped,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.fitness_center),
+              icon: Icon(Icons.home),
               label: 'Inicio',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_month_outlined),
-              label: 'Programación',
+              label: 'Citas',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.food_bank_outlined),
-              label: 'Dieta',
+              icon: Icon(Icons.pets),
+              label: 'Mascotas',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.account_circle_outlined),
